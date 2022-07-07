@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-lg-3 border-start border-1 border-primary">
+  <div class="col-12 col-lg-3 border-1 border-primary" style="border-left-style: dashed">
     <i style="color: #820f82;" class="fa fa-address-book-o fa-2x" aria-hidden="true"></i> Contact:
 
     <div class="mt-3">
@@ -15,13 +15,23 @@
     </div>
     <hr style="color: #820f82;">
     <div class="mt-2">
-      <h4 class="text-truncate">Competences</h4>
+      <h4 class="pb-2 text-truncate">Competences</h4>
       <div v-for="comp in competences">
         <p>{{ comp.skill }} <i style="color:#820f82 " class="fa fa-check " aria-hidden="true"></i></p>
       </div>
 
     </div>
-
+    <h4>Soft skills</h4>
+    <div class="row" v-for="skill in skills">
+      <div class="col-4 col-lg-6 pt-2">
+        {{skill.name}}
+      </div>
+      <div class="col-6 col-lg-4">
+          <span v-for="i in skill.stars">
+            <i class="text-primary fa fa-circle" aria-hidden="true"></i>
+          </span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -50,6 +60,52 @@ export default {
           skill: ' Great communication skills',
         }
       ],
+      skills:[
+        {
+          name:'Adaptability and flexibility',
+          stars:5
+        },
+        {
+          name:'Accepting and giving feedback',
+          stars:5
+        },
+        {
+          name:'Logical thinking',
+          stars:5
+        },
+        {
+          name:'Teamwork',
+          stars:5
+        },
+        {
+          name:'Curiosity',
+          stars:5
+        },
+        {
+          name:'Willingness to learn',
+          stars:5
+        },
+        {
+          name:'Communication',
+          stars:5
+        },
+        {
+          name:'Problem Solving',
+          stars:5
+        },
+        {
+          name:'TimeManagement',
+          stars:5
+        },
+        {
+          name:'Working well under pressure',
+          stars:5
+        },
+        {
+          name:'Leadership',
+          stars:5
+        }
+      ]
     }
   }
 }
