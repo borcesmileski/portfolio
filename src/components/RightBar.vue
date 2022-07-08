@@ -15,7 +15,7 @@
     </div>
     <hr style="color: #820f82;">
     <div class="mt-2">
-      <h4 class="pb-2 text-truncate">Competences</h4>
+      <h4 class="pb-2 text-truncate">Competences <i class="fa fa-arrow-down text-primary" v-on:click="slipDown" aria-hidden="true"></i></h4>
       <div v-for="comp in competences">
         <p>{{ comp.skill }} <i style="color:#820f82 " class="fa fa-check " aria-hidden="true"></i></p>
       </div>
@@ -38,6 +38,11 @@
 <script>
 export default {
   name: "RightBar",
+  methods:{
+    slipDown(){
+      console.log('d')
+    }
+  },
   data() {
     return {
       competences: [

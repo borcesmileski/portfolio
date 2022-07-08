@@ -49,7 +49,7 @@
     </div>
 
     <h4> <i class="text-primary fa fa-battery-full pb-3 pt-4" aria-hidden="true"></i> Additional activities</h4>
-    <div>
+    <div class="col-lg-9">
       <p>
         <i class="fa fa-bolt text-primary ms-lg-4" aria-hidden="true"></i><span class="ps-lg-2"> Football, basketball</span>
       </p>
@@ -57,8 +57,8 @@
         <i class="fa fa-bolt text-primary ms-lg-4" aria-hidden="true"></i><span class="ps-lg-2"> Volunteering at FoodBank</span>
       </p>
       <p>
-        <i class="fa fa-bolt text-primary ms-lg-4" aria-hidden="true"></i><span class="ps-lg-2"> Going places or a specific interest in the language and <br/>
-         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;culture  of particular countries</span>
+        <i class="fa fa-bolt text-primary ms-lg-4" aria-hidden="true"></i><span class="ps-lg-2"> Going places or a specific interest in
+         culture  of particular countries</span>
       </p>
       <p>
         <i class="fa fa-bolt text-primary ms-lg-4" aria-hidden="true"></i><span class="ps-lg-2"> Cinema, literature, art and music</span>
@@ -74,7 +74,7 @@
         <i class="fa fa-certificate text-primary ms-lg-4" aria-hidden="true"></i><span class="ps-lg-2"> Certificate for participation in Young Men's Leadership Project - YMLP - 2017</span>
       </p>
       <p>
-        <i class="fa fa-certificate text-primary ms-lg-4" aria-hidden="true"></i><span class="ps-lg-2"> Third place in Game Design How to? 2020</span>
+        <i class="fa fa-certificate text-primary ms-lg-4" aria-hidden="true"></i><span class="ps-lg-2"> Third place on regional competition in Mathematics 2015</span>
       </p>
     </div>
 
@@ -86,6 +86,7 @@ export default {
   name: "Education",
   data() {
     return {
+      color:'ff',
       education:[
         {
           date: 'September 2019-2023',

@@ -1,7 +1,7 @@
 <template>
-  <div class="container mt-4">
+  <div class="container mt-4" style=": ">
 
-      <Header/>
+    <Header/>
 
     <div class="row mt-5">
       <div class="col-12 col-lg-7 offset-lg-1 ">
@@ -31,9 +31,16 @@ export default {
   components:{
     Header: Header,RightBar,Education
   },
+  methods:{
+      changeColor(event){
+        $primary: '#000080';
+        return console.log( this.key)
+      }
+  },
   data() {
     return {
-
+      key:'',
+      color:'white'
     }
   }
 }
