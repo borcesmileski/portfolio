@@ -1,5 +1,5 @@
 <template>
-  <main  style="background:linear-gradient(rgba(239,218,248,0.58),rgba(245,236,245,0.28))">
+  <main  style="background:linear-gradient(rgba(236,213,246,0.45),rgba(245,236,245,0.28))">
     <div class="container pt-4">
 
 
