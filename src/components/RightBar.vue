@@ -29,7 +29,7 @@
         <div class="col-4 col-lg-6 pt-2">
           {{ skill.name }}
         </div>
-        <div class="col-6 col-lg-4">
+        <div class="col-6 col-lg-4 align-self-center">
           <span v-for="i in skill.stars">
             <i class="text-primary fa fa-circle" aria-hidden="true"></i>
           </span>

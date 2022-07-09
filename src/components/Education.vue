@@ -106,6 +106,11 @@ export default {
       ],
       experience:[
         {
+          date:'July 2022 - (present)',
+          name:'Bike Computer Co.',
+          description: 'Full stack Developer \n• Vue.js \n• Laravel',
+        },
+        {
           date:'April 2022 - June 2022',
           name:'Simplify-ERP',
           description: 'Python Odoo Developer, Skopje \n• Developing ERP solutions \n• Creating responsive frontend views \n• Providing support to maintain existing solutions'

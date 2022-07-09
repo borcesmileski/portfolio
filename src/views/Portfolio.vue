@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-4" style=": ">
+  <main class="container mt-4" style=": ">
 
     <Header/>
 
@@ -18,7 +18,7 @@
       <RightBar/>
 
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
