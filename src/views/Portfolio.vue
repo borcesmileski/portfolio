@@ -1,6 +1,6 @@
 <template>
-  <main  style="background:linear-gradient(rgba(236,213,246,0.45),rgba(245,236,245,0.28))">
-    <div class="container pt-4">
+  <main  style="background:linear-gradient(rgba(236,213,246,0.6),rgba(245,236,245,0.28))">
+    <div class="container py-4">
 
 
       <Header/>

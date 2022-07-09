@@ -1,18 +1,21 @@
 <template>
   <div class="col-12 col-lg-3 border-1 border-primary" style="border-left-style: dashed">
-    <h5><i class="fa fa-address-card text-primary" aria-hidden="true"></i>  Contact:</h5>
+    <div class="d-none d-lg-block">
+      <h5><i class="fa fa-address-card text-primary" aria-hidden="true"></i> Contact:</h5>
 
-    <div class="mt-3">
-      <p>
-        <i class="text-primary fa fa-phone" aria-hidden="true"></i> +389 78268514
-        <br/>
-        <i class="text-primary fa fa-envelope" aria-hidden="true"></i> borce.smileski@gmail.com
-        <br/>
-        <i class="text-primary fa fa-home" aria-hidden="true"></i> Makedonski Brod
-        <br/>
-        <i class="text-primary fa fa-linkedin" aria-hidden="true"></i> borche-smileski
-      </p>
+      <div class="mt-3">
+        <p>
+          <i class="text-primary fa fa-phone" aria-hidden="true"></i> +389 78268514
+          <br/>
+          <i class="text-primary fa fa-envelope" aria-hidden="true"></i> borce.smileski@gmail.com
+          <br/>
+          <i class="text-primary fa fa-home" aria-hidden="true"></i> Makedonski Brod
+          <br/>
+          <i class="text-primary fa fa-linkedin" aria-hidden="true"></i> borche-smileski
+        </p>
+      </div>
     </div>
+
     <hr style="color: #820f82;">
     <div class="mt-2">
       <h4 class="pb-2 text-truncate ">Competences <i class="fa fa-arrow-down text-primary"
@@ -23,16 +26,35 @@
 
     </div>
     <div>
-      <h4>Soft skills <i class="fa fa-arrow-down text-primary" v-on:click="slipDown1"
-                         aria-hidden="true"></i></h4>
-      <div class="row" v-for="skill in skills" v-if="boolComp1">
-        <div class="col-4 col-lg-6 pt-2">
-          {{ skill.name }}
-        </div>
-        <div class="col-6 col-lg-4 align-self-center">
+      <h4 class="py-2">Soft skills <i class="fa fa-arrow-down text-primary"
+                                                                v-on:click="slipDown1"
+                                                                aria-hidden="true"></i></h4>
+      <div>
+        <div class="row" v-for="skill in skills" v-if="boolComp1">
+          <div class="col-5  offset-lg-0 col-lg-6 pt-2">
+            {{ skill.name }}
+          </div>
+          <div class="col-5 col-lg-4 align-self-center">
           <span v-for="i in skill.stars">
             <i class="text-primary fa fa-circle" aria-hidden="true"></i>
           </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 d-lg-none">
+        <h5 class="text-center"><i class="fa fa-address-card text-primary " aria-hidden="true"></i> Contact:</h5>
+
+        <div class="mt-3">
+          <p class="text-center">
+            <i class="text-primary fa fa-phone" aria-hidden="true"></i> +389 78268514
+            <br/>
+            <i class="text-primary fa fa-envelope" aria-hidden="true"></i> borce.smileski@gmail.com
+            <br/>
+            <i class="text-primary fa fa-home" aria-hidden="true"></i> Makedonski Brod
+            <br/>
+            <i class="text-primary fa fa-linkedin" aria-hidden="true"></i> borche-smileski
+          </p>
         </div>
       </div>
     </div>

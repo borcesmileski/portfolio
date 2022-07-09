@@ -18,7 +18,7 @@
       <br/>
 
     </div>
-    <h4> <i class="text-primary fa fa-briefcase " aria-hidden="true"></i> Experience</h4>
+    <h4 class="pb-3"> <i class="text-primary fa fa-briefcase " aria-hidden="true"></i> Experience</h4>
     <div>
       <div v-for="exp in experience" class="row">
         <div class="col-12 col-lg-4 align-self-center">
