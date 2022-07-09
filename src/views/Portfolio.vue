@@ -1,22 +1,25 @@
 <template>
-  <main class="container mt-4" style=": ">
+  <main  style="background:linear-gradient(rgba(239,218,248,0.58),rgba(245,236,245,0.28))">
+    <div class="container pt-4">
 
-    <Header/>
 
-    <div class="row mt-5">
-      <div class="col-12 col-lg-7 offset-lg-1 ">
-        <div class="pe-5">
-          <h4 class="pb-2" ><i class="text-primary fa fa-user-circle-o" aria-hidden="true"></i> About me</h4>
-          <p>I am a software engineer who likes to upgrade himself constantly with new knowledge and experiences.
-            I would describe myself as persistent because whenever I want something I want to achieve it.
-            I see myself as a successful web developer in the future. </p>
+      <Header/>
+
+      <div class="row mt-4 mt-lg-5">
+        <div class="col-12 col-lg-7 offset-lg-1 ">
+          <div class="pe-5">
+            <h4 class="pb-2"><i class="text-primary fa fa-user-circle-o" aria-hidden="true"></i> About me</h4>
+            <p>I am a software engineer who likes to upgrade himself constantly with new knowledge and experiences.
+              I would describe myself as persistent because whenever I want something I want to achieve it.
+              I see myself as a successful web developer in the future. </p>
+          </div>
+
+          <Education/>
         </div>
 
-        <Education/>
+        <RightBar/>
+
       </div>
-
-      <RightBar/>
-
     </div>
   </main>
 </template>
@@ -25,22 +28,23 @@
 import Header from "@/components/Header";
 import RightBar from "@/components/RightBar";
 import Education from "@/components/Education";
+
 export default {
 
   name: 'Portfolio',
-  components:{
-    Header: Header,RightBar,Education
+  components: {
+    Header: Header, RightBar, Education
   },
-  methods:{
-      changeColor(event){
-        $primary: '#000080';
-        return console.log( this.key)
-      }
+  methods: {
+    changeColor(event) {
+      $primary: '#000080';
+      return console.log(this.key)
+    }
   },
   data() {
     return {
-      key:'',
-      color:'white'
+      key: '',
+      color: 'white'
     }
   }
 }

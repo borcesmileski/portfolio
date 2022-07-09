@@ -113,7 +113,7 @@ export default {
         {
           date:'April 2022 - June 2022',
           name:'Simplify-ERP',
-          description: 'Python Odoo Developer, Skopje \n• Developing ERP solutions \n• Creating responsive frontend views \n• Providing support to maintain existing solutions'
+          description: 'Python Odoo Developer, internship \n• Developing ERP solutions \n• Creating responsive frontend views \n• Providing support to maintain existing solutions'
         }
       ],
       skills:[

@@ -1,6 +1,6 @@
 <template>
   <div class="col-12 col-lg-3 border-1 border-primary" style="border-left-style: dashed">
-    <i style="color: #820f82;" class="fa fa-address-book-o fa-2x" aria-hidden="true"></i> Contact:
+    <h5><i class="fa fa-address-card text-primary" aria-hidden="true"></i>  Contact:</h5>
 
     <div class="mt-3">
       <p>
